@@ -1,9 +1,6 @@
 {
   "name": "coder-ghost-theme",
-  "version": "2.0.2",
-  "engines": {
-    "ghost": "^1.0.0"
-  },
+  "version": "2.1.0",
   "gpm": {
     "type": "theme",
     "categories": [
@@ -24,5 +21,11 @@
     "url": "https://mbejda.com"
   },
   "demo":"https://mbejda.com",
-  "homepage":"https://github.com/mbejda/CoderGhostTheme"
+  "homepage":"https://github.com/mbejda/CoderGhostTheme",
+  "keywords": [
+    "ghost-theme"
+  ],
+  "config": {
+    "posts_per_page": 16
+  }
 }
