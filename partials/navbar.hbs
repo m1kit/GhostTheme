@@ -13,7 +13,7 @@
 <ul class="list-unstyled menu">
     <li>
         <a href="https://github.com/m1kit" target="_blank">
-         <i class="el el-github"></i> GitHub
+         <i class="el el-github"></i> GitHub @m1kit
         </a>
     </li>
 
@@ -28,8 +28,28 @@
     {{#if @blog.twitter}}
         <li>
             <a href="{{twitter_url}}" target="_blank">
-                <i class="el el-twitter"></i> {{@blog.twitter}}
+                <i class="el el-twitter"></i> Twitter {{@blog.twitter}}
             </a>
         </li>
     {{/if}}
+
+    <li>
+        <a href="//www.topcoder.com/members/mikito/" target="_blank">
+            <i class="el el-link"></i> TopCoder <span id="topcoder-id">mikito</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="//codeforces.com/profile/mikit" target="_blank">
+            <i class="el el-link"></i> CodeForces <span id="codeforces-id">mikit</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="//atcoder.jp/users/mikit" target="_blank">
+            <i class="el el-link"></i> AtCoder <span id="atcoder-id">mikit</span>
+        </a>
+    </li>
+
+    <script>$(function(){const t=$("#topcoder-id");t.length&&$.get("//api.topcoder.com/v2/users/"+t.text()).done(function(o){if("ratingSummary"in o)for(let e of o.ratingSummary)"Algorithm"===e.name&&(t.attr("style",e.colorStyle),t.addClass("bold"))});const o=$("#codeforces-id");if(o.length){const t=o.text();$.get("//codeforces.com/api/user.info?handles="+t).done(function(e){if(!("result"in e))return;const n=e.result[0].rating||-1;let s="#000000";n>=2400?s="#FF0000":n>=2100?s="#FF8C00":n>=1900?s="#AA00AA":n>=1600?s="#0000FF":n>=1400?s="#03A89E":n>=1200?s="green":n>=0&&(s="#808080"),n>=3e3&&o.html(`<span style="color: black;">${t[0]}</span>${t.slice(1)}`),o.css("color",s),o.addClass("bold")})}});</script>
 </ul>
