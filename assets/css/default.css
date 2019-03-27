@@ -142,7 +142,7 @@ article.post img {
  margin-bottom:10px;
 }
 
-article.post:first-of-type h2.title {
+article.post:first-of-type .title {
   margin-top: 0;
   font-size: 30px;
 }
