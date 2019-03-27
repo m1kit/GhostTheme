@@ -183,3 +183,65 @@ article.post:first-of-type .title {
 .bold {
   font-weight: 700;
 }
+
+span.label {
+  cursor: default;
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  vertical-align: baseline;
+  border-radius: .25em;
+  white-space: nowrap;
+}
+
+.label.ac {
+  background-color: #5cb85c;
+}
+span.label.ac:before {
+  content: 'AC';
+}
+
+.label.wa {
+  background-color: #f0ad4e;
+}
+span.label.wa:before {
+  content: 'WA';
+}
+
+.label.tle {
+  background-color: #f0ad4e;
+}
+span.label.tle:before {
+  content: 'TLE';
+}
+
+.label.mle {
+  background-color: #f0ad4e;
+}
+span.label.mle:before {
+  content: 'MLE';
+}
+
+.label.ole {
+  background-color: #f0ad4e;
+}
+span.label.ole:before {
+  content: 'OLE';
+}
+
+.label.re {
+  background-color: #f0ad4e;
+}
+span.label.re:before {
+  content: 'RE';
+}
+
+.label.ce {
+  background-color: #f0ad4e;
+}
+span.label.ce:before {
+  content: 'CE';
+}
