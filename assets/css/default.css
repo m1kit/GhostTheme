@@ -5,9 +5,11 @@ pre {
   padding:0;
 }
 
+body {
+    font-family: Lato, "Helvetica Neue", arial, sans-serif;
+}
 
 h1,h2,h3,h4,h5 {
-  font-family: Lato, "Helvetica Neue", arial, sans-serif;
   font-weight: 700;
 }
 h1 {
@@ -74,7 +76,6 @@ ul.menu li:hover {
 .logo img {
   width:150px; 
   height:150px;
-  padding:5px;
   border-radius: 6px;
 }
 .menu li a{
@@ -197,51 +198,9 @@ span.label {
   white-space: nowrap;
 }
 
-.label.ac {
+.label.ok {
   background-color: #5cb85c;
 }
-span.label.ac:before {
-  content: 'AC';
-}
-
-.label.wa {
+.label.ng {
   background-color: #f0ad4e;
-}
-span.label.wa:before {
-  content: 'WA';
-}
-
-.label.tle {
-  background-color: #f0ad4e;
-}
-span.label.tle:before {
-  content: 'TLE';
-}
-
-.label.mle {
-  background-color: #f0ad4e;
-}
-span.label.mle:before {
-  content: 'MLE';
-}
-
-.label.ole {
-  background-color: #f0ad4e;
-}
-span.label.ole:before {
-  content: 'OLE';
-}
-
-.label.re {
-  background-color: #f0ad4e;
-}
-span.label.re:before {
-  content: 'RE';
-}
-
-.label.ce {
-  background-color: #f0ad4e;
-}
-span.label.ce:before {
-  content: 'CE';
 }
