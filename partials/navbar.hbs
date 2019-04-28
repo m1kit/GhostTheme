@@ -51,5 +51,35 @@
         </a>
     </li>
 
+    <li>
+        <a href="//leetcode.com/mikit/" target="_blank">
+            <i class="el el-link"></i> LeetCode <span id="leetcode-id">mikit</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="//csacademy.com/user/mikit" target="_blank">
+            <i class="el el-link"></i> CSAcademy <span id="csacademy-id">mikit</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="//onlinejudge.u-aizu.ac.jp/status/users/mikit" target="_blank">
+            <i class="el el-link"></i> AOJ <span id="aoj-id">mikit</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="//yukicoder.me/users/6798" target="_blank">
+            <i class="el el-link"></i> yukicoder <span id="yukicoder-id">mikit</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="//ctftime.org/user/56790" target="_blank">
+            <i class="el el-link"></i> CTFTime <span id="ctftime-id">mikit</span>
+        </a>
+    </li>
+
     <script>$(function(){const t=$("#topcoder-id");t.length&&$.get("//api.topcoder.com/v2/users/"+t.text()).done(function(o){if("ratingSummary"in o)for(let e of o.ratingSummary)"Algorithm"===e.name&&(t.attr("style",e.colorStyle),t.addClass("bold"))});const o=$("#codeforces-id");if(o.length){const t=o.text();$.get("//codeforces.com/api/user.info?handles="+t).done(function(e){if(!("result"in e))return;const n=e.result[0].rating||-1;let s="#000000";n>=2400?s="#FF0000":n>=2100?s="#FF8C00":n>=1900?s="#AA00AA":n>=1600?s="#0000FF":n>=1400?s="#03A89E":n>=1200?s="green":n>=0&&(s="#808080"),n>=3e3&&o.html(`<span style="color: black;">${t[0]}</span>${t.slice(1)}`),o.css("color",s),o.addClass("bold")})}});</script>
 </ul>
